@@ -69,5 +69,16 @@ public class Title implements Comparable<Title> {
         for (Title title : otherList) {
             System.out.println("List with order: " +title.getNome());
         }
+
+        //polimorfism with Lists
+        List<String> list;
+
+        list = new ArrayList<>();
+        list.add("a");
+        System.out.println(list);
+
+        list = new LinkedList<>();
+        list.add("b");
+        System.out.println(list);
     }
 }
