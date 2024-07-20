@@ -22,15 +22,10 @@ public class Main {
         //instantiating a list
         List<Integer> numberList = new ArrayList<>();
 
-        //variables
-        int number1 = 3;
-        int number2 = 1;
-        int number3 = 2;
-
         //adding on list
-        numberList.add(number1);
-        numberList.add(number2);
-        numberList.add(number3);
+        numberList.add(3);
+        numberList.add(1);
+        numberList.add(2);
 
         //printing list
         System.out.println("Unordered list: " +numberList);
