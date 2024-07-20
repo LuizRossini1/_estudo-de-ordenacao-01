@@ -22,14 +22,9 @@ public class Title implements Comparable<Title> {
         return this.nome.compareTo(other.nome);
     }
 
-    @Override
-    public String toString() {
-        return nome;
-    }
-
     public static void main(String[] args) {
         //objects
-        var horse = new Title("horse");
+        var ant = new Title("ant");
         var cat = new Title("cat");
         var bee = new Title("bee");
 
@@ -37,11 +32,20 @@ public class Title implements Comparable<Title> {
         List<Title> objectsList = new ArrayList<>();
 
         //adding on list
-        objectsList.add(horse);
+        objectsList.add(ant);
         objectsList.add(cat);
         objectsList.add(bee);
 
-        //printing list without order
-        System.out.println(objectsList);
+        //loop to printing each object
+        for (Title title : objectsList) {
+            System.out.println(title.getNome());
+        }
+        //calling method
+        Collections.sort(objectsList);
+
+        //loop to printing each object
+        for (Title title : objectsList) {
+            System.out.println(title.getNome());
+        }
     }
 }
