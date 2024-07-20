@@ -14,6 +14,7 @@ Adicione elementos e imprima a lista, mostrando que é possível trocar facilmen
 demonstrando o uso de polimorfismo. */
 package Challenge;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -22,16 +23,19 @@ public class Main {
         List<Integer> numberList = new ArrayList<>();
 
         //variables
-        int numero1 = 1;
-        int numero2 = 5;
-        int numero3 = 10;
+        int number1 = 3;
+        int number2 = 1;
+        int number3 = 2;
 
         //adding on list
-        numberList.add(numero1);
-        numberList.add(numero2);
-        numberList.add(numero3);
+        numberList.add(number1);
+        numberList.add(number2);
+        numberList.add(number3);
 
         //printing list
-        System.out.println(numberList);
+        System.out.println("Unordered list: " +numberList);
+        //ordering list and printing
+        Collections.sort(numberList);
+        System.out.println("Ordered list: " +numberList);
     }
 }
